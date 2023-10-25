@@ -24,7 +24,7 @@
 
 namespace local_accessibility\widgets;
 
-defined('MOODLE_INTERNAL') or die();
+defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__ . '/../../classes/rangewidget.php');
 
@@ -44,9 +44,6 @@ class fontsize extends rangewidget {
     }
 
     public function init() {
-        /**
-         * @var \moodle_page $PAGE
-         */
         global $PAGE;
 
         $userconfig = $this->getuserconfig();
@@ -54,6 +51,7 @@ class fontsize extends rangewidget {
             $this->addbodyclass('accessibility-fontsize-' . round($userconfig * 100));
         }
 
+        /** @var \moodle_page $PAGE */
         $PAGE->requires->js_call_amd('accessibility_fontsize/script', 'init', [$userconfig]);
     }
 }
