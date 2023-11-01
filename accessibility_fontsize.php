@@ -32,6 +32,10 @@ require_once(__DIR__ . '/../../classes/rangewidget.php');
  * Font size accessibility widget definition
  */
 class fontsize extends rangewidget {
+
+    /**
+     * Constructor
+     */
     public function __construct() {
         parent::__construct(
             get_string('pluginname', 'accessibility_fontsize'),
@@ -43,6 +47,11 @@ class fontsize extends rangewidget {
         );
     }
 
+    /**
+     * Widget initialisation
+     *
+     * @return void
+     */
     public function init() {
         global $PAGE;
 
