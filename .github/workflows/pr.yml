@@ -12,7 +12,7 @@ jobs:
     name: CI
     uses: ponlawat-w/moodle-local_accessibility/.github/workflows/ci.yml@master
     with:
-      widget-textcolour-branch: ${{ github.ref }}
+      widget-fontsize-branch: ${{ github.ref }}
   ci-finished:
     name: CI Finished
     needs: ci
