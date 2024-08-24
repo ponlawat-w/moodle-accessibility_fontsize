@@ -22,11 +22,9 @@
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace local_accessibility\widgets;
+namespace accessibility_fontsize;
 
-defined('MOODLE_INTERNAL') || die();
-
-require_once(__DIR__ . '/../../classes/rangewidget.php');
+use local_accessibility\widgets\rangewidget;
 
 /**
  * Font size accessibility widget definition
@@ -57,6 +55,8 @@ class fontsize extends rangewidget {
 
         $userconfig = $this->getuserconfig();
         if ($userconfig) {
+            // We set the userconfig variable because we perhaps need it for the amd script too.
+            $userconfig = clean_param($userconfig, PARAM_FLOAT);
             $this->addbodyclass('accessibility-fontsize-' . round($userconfig * 100));
         }
 
