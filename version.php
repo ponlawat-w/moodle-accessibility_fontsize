@@ -25,8 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'accessibility_fontsize';
-$plugin->release = '2.0.0';
-$plugin->version = 2024082401;
+$plugin->release = '2.0.1';
+$plugin->version = 2024082402;
 $plugin->requires = 2022041900;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [

@@ -31,8 +31,8 @@ import { saveWidgetConfig } from 'local_accessibility/common';
  */
 export const init = (userdefault = undefined) => {
     const classnames = [
-        'accessibility-fontsize-050',
-        'accessibility-fontsize-075',
+        'accessibility-fontsize-50',
+        'accessibility-fontsize-75',
         'accessibility-fontsize-125',
         'accessibility-fontsize-150',
         'accessibility-fontsize-175',
@@ -48,7 +48,7 @@ export const init = (userdefault = undefined) => {
                 await saveWidgetConfig('fontsize', null);
                 return;
             }
-            const classname = 'accessibility-fontsize-' + Math.round(parseFloat(size) * 100).toString().padStart(3, '0');
+            const classname = 'accessibility-fontsize-' + Math.round(parseFloat(size) * 100).toString();
             if (classnames.indexOf(classname) < 0) {
                 return;
             }
