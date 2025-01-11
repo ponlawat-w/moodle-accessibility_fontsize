@@ -19,13 +19,13 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
  * @copyright   2023 Ponlawat Weerapanpisit <ponlawat_w@outlook.co.th>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-body.accessibility-fontsize-050,
-body.accessibility-fontsize-050 * {
+body.accessibility-fontsize-50,
+body.accessibility-fontsize-50 * {
     font-size: 0.50rem;
 }
 
-body.accessibility-fontsize-075,
-body.accessibility-fontsize-075 * {
+body.accessibility-fontsize-75,
+body.accessibility-fontsize-75 * {
     font-size: 0.75rem;
 }
 
