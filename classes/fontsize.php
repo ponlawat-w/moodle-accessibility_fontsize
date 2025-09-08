@@ -30,7 +30,6 @@ use local_accessibility\widgets\rangewidget;
  * Font size accessibility widget definition
  */
 class fontsize extends rangewidget {
-
     /**
      * Constructor
      */
